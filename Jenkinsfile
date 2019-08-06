@@ -9,7 +9,7 @@ pipeline {
     kubernetes {
       cloud "go-demo-5-build"
       label "go-demo-5-build"
-      serviceAccount "build"
+      serviceAccount "default"
       yamlFile "KubernetesPod.yaml"
     }      
   }
